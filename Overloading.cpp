@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-void printNumber(int x)
+	void printNumber(int x)
 	{
 		 cout<<x<<endl;
 	}
-
-void printNumber(float x)
+	//To overload keep the same name and have different number of parameters or different input type 
+	void printNumber(float x)
 	{
 		 cout<<x<<endl;
 	}
