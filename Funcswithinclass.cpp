@@ -5,7 +5,7 @@ class myClass
 {
 	public:
 	    //This is the wrong way to do it
-    //i want to create a function that can change name at any given moment
+    	//i want to create a function that can change name at any given moment
 	    void setName(string d)
 	    {
 	        name=d;
