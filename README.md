@@ -4,6 +4,6 @@ C++ Programs
 
 ## How to compile c++ Code
 ```console
-$ g++ nameOfFile.cpp
-$ ./a.out
+root@omarbelkady:~$ g++ nameOfFile.cpp
+root@omarbelkady:~$ ./a.out
 ```
