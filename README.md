@@ -3,7 +3,7 @@ C++ Programs
 
 
 ## How to compile c++ Code
-```bash
+```console
 $ g++ nameOfFile.cpp
 $ ./a.out
 ```
