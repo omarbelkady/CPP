@@ -3,7 +3,7 @@ C++ Programs
 
 
 ## How to compile c++ Code
-```sh
+```zsh
 g++ nameOfFile.cpp
 ./a.out
 ```
