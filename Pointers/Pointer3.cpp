@@ -47,7 +47,7 @@ int main()
     //Wrong way to Dereferencing The pointer
     //(*mysecptr).Output();
     
-    //Correct way
+    //Correct way to do it
     mysecptr->Output();
     
 }
