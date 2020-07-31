@@ -27,7 +27,7 @@ class Player : public Indiv{
 			return my_Name;
 		}
 
-		std::string GetClassName().override{
+		std::string GetClassName() override{
 			return "Individual";
 		}
 };
@@ -46,15 +46,11 @@ void Print(Printing *object)
 }
 int main()
 {
-	// We cannot do this because we are instantiating the abstract class we must instantiate the derived class
-	//Indiv* i = new Indiv();
-	
 	Player* e = new Player("Eric");
 	//PrintMyName(e);
 
 	//Player works fine because we did define the PrintMyName Function   
 	Player* l = new Player("Louise");
-	//PrintMyName(p);
 	
 	Print(e);//Entity Calling
 	Print(l);//Player 
