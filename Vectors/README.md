@@ -17,7 +17,7 @@ main()
 	//HOW TO DEFINE A VECTOR
 	//VECTOR<Datatype> nameOfYourVector={16,19,23,16};
 	
- 	//data structrue<datatype> nameOfDataStructure
+ 	//data structure<datatype> nameOfDataStructure
 	vector<int> omarsVector={13,37};
 	
 	//Remember vectors always know their size regardless unlike arrays.
