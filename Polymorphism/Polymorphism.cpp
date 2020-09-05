@@ -12,7 +12,12 @@ class MyClass{
 	
 	public:
 		std::string FullName;
-		//Constructor
+		//Default Constructor
+		MyClass(){
+			std::cout<<"Hello This Will Be Called Automatically Because It is The Default Constructor Of The Base Class."<<endl;
+		}
+
+		//Constructor	
 		MyClass(std::string fuName, std::string nickName){
 			FullName=fuName;
 			hisName=nickName;
@@ -42,12 +47,13 @@ class MyClass{
 class SubClass : public MyClass{
 public:
 	string langs;
-
-	SubClass(std::string langsHeLoves, std::string nickName): MyClass(fuName, nickName){
-		hisName = nickName;
-		langs = langsHeLoves;
-		FullName= fuName;
-		cout<< "The Individual: "<<nickName<<" enjoys to write in: "<<langsHeLoves<<endl;
+	string FullName;
+	SubClass(std::string fuName="Alan Ngo", std::string nickName="C-56837"):MyClass(fuName, nickName){
+		
+	}
+	SubClass(std::string fuName="Alan 2-56837", std::string nickName="PintosLer", std::string langs="C,C, AND C"){
+		langs=langs;
+		cout<<"The Individual: "<<nickName<<" enjoys to write in: "<< langs<<endl;
 	}
 
 
@@ -61,7 +67,6 @@ public:
 int main()
 {
 	//Creating an instance with values set
-	SubClass nelan("Alan Ngo", "C-Lover");
-	nelan.likesC();
+	SubClass nelan("Alan Ngo", "Low-Level Lover", "C, C, C");
 	return 0;
 }
