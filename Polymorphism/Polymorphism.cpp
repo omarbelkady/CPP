@@ -53,7 +53,7 @@ public:
 	}
 	SubClass(std::string fuName="Alan 2-56837", std::string nickName="PintosLer", std::string langs="C,C, AND C"){
 		langs=langs;
-		cout<<"The Individual: "<<nickName<<" enjoys to write in: "<< langs<<endl;
+		cout<<"The Individual: "<<fuName<<" aka "<<nickName<<" enjoys to write in: "<< langs<<endl;
 	}
 
 
