@@ -41,6 +41,7 @@ class MyClass{
 
 class SubClass : public MyClass{
 public:
+	string langs;
 
 	SubClass(std::string langsHeLoves, std::string nickName): MyClass(fuName, nickName){
 		hisName = nickName;
