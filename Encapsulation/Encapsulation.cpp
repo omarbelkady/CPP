@@ -1,49 +1,26 @@
-/*
- * Encapsulation means properties of a class should not be public they should be private
- * because they can change them as they
- * */
-
 #include<iostream>
 using namespace std;
-class Car{
+
+class Encapsulation{
 	private:
-		string Name;
-		string Color;
-		double Price;
-		bool IsBroken;
-
-	public:	
-	Car(string name, string color, double price){
-		Name = name;
-		Color = color;
-		Price = price;
-		IsBroken=false;
-	}
-	void getInfo(){}
-	void crashCar(){
-		std::cout<<Name<<" crashed"<<endl;
-		IsBroken=true;
-	}
-
-	void repairCar(){
-		std::cout<<Name<< " repaired"<<endl;
-		IsBroken=false;
-	}
-
-	void move(){
-		if(IsBroken){
-			std::cout<<Name<< " is Broken"<<endl;
+		int Nelan;
+	public:
+		void setTo(int assm)
+		{
+			Nelan = assm;
 		}
 
-		else
-			cout<<Name<<" is Driving"<<endl;
-	}
-
-
+		int getVal()
+		{
+			return Nelan;
+		}
 };
-int main(){
-	Car ford("Ford", "Blue", 60000);
-	Car mercedes("Mercedes","Green", 650);
-	mercedes.move();
-	ford.move();
+
+int main()
+{
+	Encapsulation alanLovesC;
+	alanLovesC.setTo(634256837);
+	cout<<"\n"<<endl;
+	cout<<alanLovesC.getVal()<<endl;
+	return 0;
 }
