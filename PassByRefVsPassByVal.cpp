@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
 int main(){
+	 /* Function Prototyping*/
 	void passByValue(int x);
 
+	 /* Function Prototyping*/
 	void passByReference(int *x);
 
 	int clover = 256837;
