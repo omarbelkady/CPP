@@ -93,4 +93,7 @@ void work(int &a)
 	a = 256837;
 }
 //So I create a location in memory a and it will refer to the location x
+//I update the value of x NOT a in memory
+//Which means the output now will be 256837 which is the 2526 favorite programming language and remember imperative
+//is his favorite paradigm NOT OOP nor Functional
 ```
