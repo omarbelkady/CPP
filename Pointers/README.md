@@ -97,3 +97,22 @@ void work(int &a)
 //Which means the output now will be 256837 which is the 2526 favorite programming language and remember imperative
 //is his favorite paradigm NOT OOP nor Functional
 ```
+
+
+
+### Pass By Pointers Definition
+```cpp
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x = 727225;//fav programming language for Nelan aka pascal enthusiast
+	
+	work(&x);
+	
+	return 0;
+}
+void work(int *a)//To define it as a pointer I use the asterix symbol
+{
+	*a = 256837;//Anytime I want to work with the data I use the dereference operator(*) to use it again.
+}
