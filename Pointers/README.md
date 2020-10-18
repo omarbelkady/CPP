@@ -76,7 +76,7 @@ void work(int a)
 //Pass By Reference On the Other Hand, can change data and will be reflected on the calling side.
 ```
 
-### Pass By Value Definition
+### Pass By Reference Definition
 ```cpp
 #include<iostream>
 using namespace std;
@@ -88,8 +88,9 @@ int main()
 	
 	return 0;
 }
-void work(int a)
+void work(int &a)
 {
 	a = 256837;
 }
+//So I create a location in memory a and it will refer to the location x
 ```
