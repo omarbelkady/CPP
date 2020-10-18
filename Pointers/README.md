@@ -40,3 +40,56 @@ User u=User();
 //The reason why is because C++ will allocate memory on the heap. This will cause terrible problems later because it will be 
 //hard for you to free it
 ```
+
+### Important Concepts
+```
+Arguments by default in C++ are passed by value meaning values are copied to the parameter. 
+However, arrays in C++ are said to decay to pointers meaning they lose information around them. This means they lose some pieces of information around them.
+It is worth remembering that when using arrays within functions they are said to be mutable by default. In other words, if I pass an array to a function,
+the function can modify the array and changes will be reflected after the function call. Remember if you use an array you are kind of restricted to how much 
+data you can enter only if you implement a function that allows the array to take in an additional argument of how long the array is. But if you use the data 
+structure you do not have to worry about size limitation.
+```
+
+### Pass By Value Definition
+```cpp
+//Remember you can return by value, return by reference or return by pointer
+//When I have an argument passed into a function 
+#include<iostream>
+using namespace std;
+int main(){
+	int x = 10;
+	
+	work(x);//So What is happening here?? After I invoke the function work what is the value of x?
+	
+	
+	return 0;
+}
+void work(int a)
+{
+	a = 256837;
+}
+//So I have two locations in memory a and x. x is filled with a value of 10. After my function call 10 is copied into the parameter a. Then I go line by line
+//and a is now replaced with the value of 256837 aka C-Lover because 2526 is a Low Level Enthusiast. The function definition ends and my main function gets run
+//and none of the changes made within the function are reflected after the function call. Pass By Value is simply making copies of everything Pass By Value is
+//much safer than by reference because if the logic within the function is pass by value then it won't change any of the data.
+//Pass By Reference On the Other Hand, can change data and will be reflected on the calling side.
+```
+
+### Pass By Value Definition
+```cpp
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x = 10;
+	
+	work(x);
+	
+	return 0;
+}
+void work(int a)
+{
+	a = 256837;
+}
+```
