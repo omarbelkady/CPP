@@ -8,8 +8,19 @@ int assem_enthus = 5; //area in memory that carries the value of 5 and we can re
 	Address of Operator:   &
 */
 
-//Declaring a pointer...use this when wanting to use pointers
-int *csthreesevfivfb=&assem_enthus;
+int x[] = {1,2,3,5};
+cout<<"The first element in the array x: "<<*x<<" and the address in memory "<<&x<<endl;
+
+//Declaring a pointer...use this when wanting to use an integer pointer
+int *intpointer=&assem_enthus;
+float *floatpointer=&pasc_enthus;
+
+- & gives the address of the variable in memory
+- * gives out the value stored in memory aka the dereference operator
+
+//regular syntax for creating a pointer
+//DATATYPE *Pointer_NAME
+
 
 /*
 	REMEMBER an integer pointer is not the the same as an integer variable
