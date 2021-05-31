@@ -251,6 +251,17 @@ void work(int *a)//To define it as a pointer I use the asterix symbol
 }
 ```
 
+### Example For Reference
+```cpp
+//given the bottom array
+int arr[4][2] = {
+	{7,4},
+	{6,8},
+	{6,7},
+	{3,2}
+}
+```
+
 
 ### Useful Pointer Notation You Must Know In CPP
 
