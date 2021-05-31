@@ -249,3 +249,18 @@ void work(int *a)//To define it as a pointer I use the asterix symbol
 	//I am dereferencing a to set its value to 256837 which alters the data in memory and changes are also reflected
 	//outside the scope of this function aka globally.
 }
+
+
+
+### Useful Pointer Notation You Must Know In CPP
+
+|		Notation| Arr Notation | Val
+|----------|----------|----------|
+|    *(*arr) |    arr[0][0]  |   7  
+|    *(*arr+1) |    arr[0][1]  |   4  
+|    * (*(arr+1)) |    arr[1][0]  |   6  
+|     * (* (arr+1)+1) |    arr[1][1]  |   8  
+|    * (* (arr+2)) |    arr[2][0]  |   6  
+|    * (* (arr+2)+1) |    arr[2][1]  |   7  
+|    * (*(arr+3)) |    arr[3][0]  |   3  
+|    * (* (arr+3)+1) |    arr[3][1]  |   2  
