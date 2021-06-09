@@ -1,3 +1,5 @@
+## Pointers in C++
+
 ```cpp
 int assem_enthus = 5; //area in memory that carries the value of 5 and we can refer to it as assem_enthus
 //all programs run in memory and I need something to say where is the variable assem_enthus is located in Memory
@@ -51,15 +53,37 @@ User u=User();
 //The reason why is because C++ will allocate memory on the heap. This will cause terrible problems later because it will be 
 //hard for you to free it
 ```
+### The New Operator in C++:
+
+- To allocate memory at runtime in C++ I use the new keyword 
+- When using the new operator I am asking for memory allocation on the free storage
+- if there is enough memory the new operator initializes the memory and returns to me the address of the new pointer variable in memory 
+
+```cpp
+//allocating memory
+pointer_var_type *pointer_var_name = new datatype;
+
+float *nelanpintosfb = new float(746867.32);
+
+
+//allocate a block of memory aka an array
+int *djfb = new int[4];
+
+//initializing 
+```
+
 
 ### Important Concepts
 ```
-Arguments by default in C++ are passed by value meaning values are copied to the parameter. 
-However, arrays in C++ are said to decay to pointers meaning they lose information around them. This means they lose some pieces of information around them.
-It is worth remembering that when using arrays within functions they are said to be mutable by default. In other words, if I pass an array to a function,
-the function can modify the array and changes will be reflected after the function call. Remember if you use an array you are kind of restricted to how much 
-data you can enter only if you implement a function that allows the array to take in an additional argument of how long the array is. But if you use the data 
-structure you do not have to worry about size limitation.
+Arguments by default in C++ are passed by value meaning values are copied 
+to the parameter. However, arrays in C++ are said to decay to pointers 
+meaning they lose information around them. This means they lose some pieces
+ of information around them. It is worth remembering that when using arrays 
+ within functions they are said to be mutable by default. In other words, 
+ if I pass an array to a function, the function can modify the array and
+  changes will be reflected after the function call. Remember if you use
+  an array you are kind of restricted to how much data you can enter only 
+  if you implement a function that allows the array to take in an additional argument of how long the array is. But if you use the data structure you do not have to worry about size limitation.
 ```
 
 ### Pass By Value Definition
