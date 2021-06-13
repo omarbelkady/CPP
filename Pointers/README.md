@@ -72,6 +72,26 @@ int *djfb = new int[4];
 //initializing 
 ```
 
+### The Del Operator in C++ is the exact opposite of new
+```cpp
+/*
+useful for deallocating dynamically allocated memory
+it releases memory pointed by the pointer variable
+*/
+
+int *nelanlvsdj = new int;//allocating memory
+
+del nelanlvsdj; //deallocating memory
+```
+
+### The Delete Operator in C++ is used to remove instead of a portion in memory but the entire block
+```cpp
+int *polanfb = new int[7];//allocating memory
+
+delete[] polanfb; //since we dynamically allocated memory using the new operator we dynamically deallocate using the delete operator
+```
+
+
 
 ### Important Concepts
 ```
